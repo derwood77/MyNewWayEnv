@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MyNewWayEnvApp: App {
+    var house: ContentView.House = .stark
+   
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(house: house)
         }
     }
 }
